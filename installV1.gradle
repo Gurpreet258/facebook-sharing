@@ -1,0 +1,42 @@
+apply plugin: 'com.github.dcendents.android-maven'
+
+group = 'https://github.com/Gurpreet258/facebook-sharing'                               // Maven Group ID for the artifact
+
+install {
+    repositories.mavenInstaller {
+        // This generates POM.xml with proper parameters
+        pom {
+            project {
+                packaging 'aar'
+                groupId 'com.paxcel.facebooksharing'
+                artifactId 'facebook'
+                version '1.0.0'
+                // Add your description here
+                name 'FacebookShare'
+                description 'A wrapper for Facebook Native Like and share on Android'
+                url 'https://github.com/Gurpreet258/facebook-sharing'
+
+                // Set your license
+                licenses {
+                    license {
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id 'gurpreet-kaur'
+                        name 'Gurpreet kaur'
+                        email 'gurpreet258@gmail.com'
+                    }
+                }
+                scm {
+                    connection 'https://github.com/Gurpreet258'
+                    developerConnection 'https://github.com/Gurpreet258'
+                    url 'https://github.com/Gurpreet258'
+
+                }
+            }
+        }
+    }
+}

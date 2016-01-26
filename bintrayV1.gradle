@@ -26,8 +26,8 @@ Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
 bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
+    user = "gurpreet-kaur"
+    key = "d28622efe2077350bd469c627f52077f6bb9db7e"
 
     configurations = ['archives']
     pkg {
@@ -35,7 +35,7 @@ bintray {
         name = 'facebook-sharing'
         desc = 'A wrapper for Facebook Native Like and share on Android'
         websiteUrl = 'https://github.com/Gurpreet258/facebook-sharing'
-        vcsUrl = 'https://github.com/Gurpreet258/facebook-sharing'
+        vcsUrl = 'https://github.com/Gurpreet258/facebook-sharing.git'
         licenses = ["Apache-2.0"]
         publish = true
         publicDownloadNumbers = true
@@ -43,7 +43,7 @@ bintray {
             desc = libraryDescription
             gpg {
                 sign = true //Determines whether to GPG sign the files. The default is false
-                passphrase = properties.getProperty("bintray.gpg.password")
+                passphrase = "facebook-sharing"
                 //Optional. The passphrase for GPG signing'
             }
         }

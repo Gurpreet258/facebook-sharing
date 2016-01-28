@@ -10,7 +10,7 @@ install {
                 packaging 'aar'
                 groupId 'com.paxcel.facebooksharing'
                 artifactId 'facebook'
-                version '1.0.0'
+                version '1.0.1'
                 // Add your description here
                 name 'FacebookShare'
                 description 'A wrapper for Facebook Native Like and share on Android'

@@ -1,19 +1,18 @@
 apply plugin: 'com.android.library'
-
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'facebook-share'
 
-    publishedGroupId = 'com.paxcel.facebooksharing'
+    publishedGroupId = 'com.paxcel.facebookshare'
     libraryName = 'FacebookShare'
-    artifactId = 'facebook'
+    artifact = 'facebook'
 
     libraryDescription = 'A wrapper for Facebook Native Like and share on Android'
 
     siteUrl = 'https://github.com/Gurpreet258/facebook-sharing'
     gitUrl = 'https://github.com/Gurpreet258/facebook-sharing.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.1'
     developerId = 'gurpreet-kaur'
     developerName = 'gurpreet kaur'
     developerEmail = 'gurpreet258@gmail.com'
@@ -48,5 +47,3 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.0.0'
     compile 'com.facebook.android:facebook-android-sdk:4.7.0'
 }
-apply from:'https://raw.githubusercontent.com/Gurpreet258/facebook-sharing/master/bintrayV1.gradle'
-apply from:'https://raw.githubusercontent.com/Gurpreet258/facebook-sharing/master/installV1.gradle'
